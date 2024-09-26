@@ -1,0 +1,182 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="LoginToTradeshift" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1130.4,1023.2" sap2010:WorkflowViewState.IdRef="LoginToTradeshift_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="LoginToTradeshift" sap:VirtualizedContainerService.HintSize="545.6,958.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="username" />
+      <Variable x:TypeArguments="ss:SecureString" Name="password" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="Tradeshift Login Credentials" CacheStrategy="None" DisplayName="Get Tradeshift Login Credentials" FolderPath="Pwani/Unilever Tradeshift Upload" sap:VirtualizedContainerService.HintSize="483.2,143.2" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[password]" Username="[username]" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Log in | Tradeshift" sap:VirtualizedContainerService.HintSize="483.2,663.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="443dd7ee-93fb-4a8b-bb38-e9c0f5120553" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,446.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="443dd7ee-93fb-4a8b-bb38-e9c0f5120553" Text="[username]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://go.tradeshift.com/?currentScreen=0" CVScreenId="13d2b3be-c313-465f-8df3-de37eb9bf731" CvElementArea="744, 524, 433, 38" CvType="InputBox" DesignTimeRectangle="745, 527, 430, 33" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT j_username'" FullSelectorArgument="&lt;webctrl id='j_username' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='j_username' tag='INPUT' type='text' class='text tst-email tst-email-login email empty js-empty required ts-input ts-spirit ts-field ts-text' aaname='' /&gt;" Guid="6afbed2d-3fb6-43ae-a23f-ecdefad82c5a" InformativeScreenshot="b3a7ffb572206ba3028400f471bbf8b4.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in | Tradeshift' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="13d2b3be-c313-465f-8df3-de37eb9bf731" CvTextArea="744, 504, 93, 12" CvTextArgument="EMAIL ADDRESS" CvType="Text" DesignTimeRectangle="745, 494, 419, 33" ElementType="Text" FriendlyName="'Email address'" FullSelectorArgument="&lt;webctrl class='holder' parentid='loginForm' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='holder' parentid='loginForm' tag='SPAN' type='' aaname='Email address' check:innerText='EMAIL ADDRESS' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="443dd7ee-93fb-4a8b-bb38-e9c0f5120553" SecureText="[password]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://go.tradeshift.com/?currentScreen=0" CVScreenId="13d2b3be-c313-465f-8df3-de37eb9bf731" CvElementArea="744, 602, 432, 37" CvType="InputBox" DesignTimeRectangle="745, 604, 430, 33" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'INPUT j_password'" FullSelectorArgument="&lt;webctrl id='j_password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='j_password' tag='INPUT' type='password' class='password tst-password tst-password-login empty js-empty required ts-input ts-spirit ts-field ts-text' aaname='' /&gt;" Guid="ffca1e6d-a134-432b-8f0b-42b481e52e6a" InformativeScreenshot="ba3fdd55258f4295939dd6217f049a6b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in | Tradeshift' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="13d2b3be-c313-465f-8df3-de37eb9bf731" CvTextArea="744, 581, 66, 12" CvTextArgument="PASSWORD" CvType="Text" DesignTimeRectangle="745, 571, 419, 33" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl aaname='Password' class='holder' parentid='loginForm' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' class='holder' parentid='loginForm' tag='SPAN' type='' check:innerText='PASSWORD' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Continue'" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="443dd7ee-93fb-4a8b-bb38-e9c0f5120553" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://go.tradeshift.com/?currentScreen=0" CVScreenId="98a8053d-8796-4f15-a3da-4efcb4ee6eb4" CvElementArea="742, 702, 434, 47" CvTextArea="923, 720, 73, 13" CvTextArgument="CONTINUE" CvType="Button" DesignTimeRectangle="745, 704, 430, 44" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Continue'" FullSelectorArgument="&lt;webctrl id='proceed' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='proceed' tag='BUTTON' type='button' class='primary large full' aaname='                                              Continue                                      ' check:innerText='CONTINUE' /&gt;" Guid="c3ebe6b1-b369-479e-bf8a-f36b78a33077" InformativeScreenshot="496b821cded28197eced7dce7b33484c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in | Tradeshift' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Document Manager' Icon" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="443dd7ee-93fb-4a8b-bb38-e9c0f5120553" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://go.tradeshift.com/#/Tradeshift.Dashboard" DesignTimeRectangle="18, 359, 40, 40" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl aaname='Document Manager' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Document Manager' tag='IMG' type='' class='tst-app-icon app-icon-img loaded' /&gt;" Guid="f1b0e360-4b0d-4cfd-bc01-9476476bd843" InformativeScreenshot="089aaee3a1f437cbeea70a2bf2ea464d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='Tradeshift.Chrome' title='Dashboard | Tradeshift' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1912, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHoSURBVGhD7ZhPK0RhFMYHWwsKKz7EYKcUNqz9yQfBZxCNBZmlSaPEUj6LnZrFjCLCSPlT8zjPXOPO4ukd11vq1J361dvvdM55z73vvbkKhSLgGik9IaUnpPSElJ6Q0hNSekJKT0jpCSk9IaUnpPSElAH6J4HBGWBkHhhbSBi1NV3/FNDXic+l8V6wVjvfclXPIFIGYKPlDWDnGNg/Tdi19comMDSbxFdtvX2UxnvBWqzJXNUziJQBeLW44cYt8PySUL8DSlVgfDG5G3u2rt2k8V7UrRaHYG3VM4iUAXjLD+yqNa1x58dNHJ4BE0sWt02Uz4GHp+/gL37M551gbdUziJQB3A/AI9I+QnZs2Jh0HyE1QKsFfHza0K9pTjfMZ03WVj2DSBmg85CWTuyq20YJN7+2BQzbQ6wGeHsHrq6BykWa0w1r8SXwLw8xX5V82/Bq88gQrrn5gWk9wGMTqF4CxfU0pxvmsyZrq55BpIxADXBv67I9I4ypnCikjCAfICtSRpAPkBUpI8gHyIqUEeQDZEXKCPIBsiJlBPkAWZEyAvVJWWskjh/6KicKKSP4+aivpB/tXNP96e/9XkgZgfq3Ctd0jKmcKKT0hJSekNITUnpCSk9I6QkpPSGlJ6T0hJSekNITUroB+ALVVOvrzk19sgAAAABJRU5ErkJggg==" InformativeScreenshot="5eb3eac2839cb75a616df60c3539b033.jpg" Selector="&lt;html app='chrome.exe' title='Log in | Tradeshift' /&gt;" Title="Log in | Tradeshift" Url="https://go.tradeshift.com/?currentScreen=0" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
